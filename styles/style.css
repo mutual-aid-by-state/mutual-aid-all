@@ -61,18 +61,18 @@ li {
     font-size: 24px;
   }
   h1 {
-    font-size: 34px;
+    font-size: 26px;
   }
   #localesContainer {
     flex-direction: column;
   }
 
   button {
-    width: 80% !important;
+    width: 80%;
   }
 
   ul {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 501px) and (max-width: 999px) {
