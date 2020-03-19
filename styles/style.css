@@ -53,9 +53,14 @@ li {
 
 #feedback {
   font-size: 20px;
+  margin: 20px;
 }
 
-@media screen and (max-width: 500px) {
+#thanks {
+  font-size: 12px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   /* Mobile styles */
   html {
     font-size: 24px;
