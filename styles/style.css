@@ -43,7 +43,7 @@ button:hover {
 }
 
 ul {
-  font-size: 26px;
+  font-size: 20px;
 }
 
 li {
@@ -55,16 +55,20 @@ li {
   font-size: 20px;
 }
 
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
   /* Mobile styles */
   html {
     font-size: 24px;
   }
   h1 {
-    font-size: 64px;
+    font-size: 34px;
   }
   #localesContainer {
     flex-direction: column;
+  }
+
+  button {
+    width: 80% !important;
   }
 
   ul {
