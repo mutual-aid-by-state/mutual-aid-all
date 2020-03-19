@@ -20,17 +20,22 @@
     <!-- TODO make email clickable to copy to clipboard -->
     <div id="feedback">
       <p>
-        Email mabscov19@gmail.com to add a Mutual Aid Resource, or to report an
-        a11y issue.
+        Email mabscov19@gmail.com to add a Mutual Aid Resource, request an edit,
+        or to report an a11y issue.
       </p>
       <p>
         Please note this is the first iteration of a WIP, maintained by a single
-        dev in their spare time. It is desiged to be accessible and secure
+        dev in their spare time. It is designed to be accessible and secure
         first, with as little external dependencies as possible.
       </p>
       <p>
         This is a free, open source project. Email mabscov19@gmail.com if you
         would like to contribute design or development.
+      </p>
+      <p>
+        Many thanks to @carestrike for the Coronavirus Resource Kit, from which
+        most of these resources are garnered, and thanks to the individuals who
+        created and are working on those resources.
       </p>
     </div>
 
@@ -44,36 +49,103 @@
           localeBtn.style.backgroundColor === "ivory" ? "red" : "ivory";
       };
       var foo = function addToggleEventListener(id) {
-        console.log("ARE YOU BEING CALLED");
-
-        console.log(
-          "WHAT IS THE ELEMENT IN TOGGLE ADD",
-          document.getElementById(id)
-        );
         theElement = document.getElementById(id);
         theElement.addEventListener("click", fa);
       };
-      // TODO abstract into json
 
-      var resourcesLocale = ["AL", "AZ"];
+      // TODO abstract into json
+      var resourcesLocale = [
+        "ALL",
+        "CA",
+        "CT",
+        "GA",
+        "IN",
+        "MA",
+        "MD",
+        "NY",
+        "TX",
+        "WA"
+      ];
 
       var resourcesLinks = {
-        AZ: [["Google", "https://www.google.com"]],
-        AL: [["facebook", "https://www.facebook.com"]]
+        ALL: [
+          [
+            "WILLING TO HELP IMMUNE COMPROMISED PEOPLE IN NEED",
+            "https://docs.google.com/document/d/1u6JQDlkjEWaYtfTxQ54gshOjOl9Fc76UCi5jVYYGn9E/"
+          ],
+          [
+            "Collective Care Is Our Best Weapon against COVID-19",
+            "https://docs.google.com/document/d/1uP49OQGhosfBN4BOYQvyy_Mu3mpCSOYzip13LksC-S8/edit"
+          ]
+        ],
+
+        CA: [
+          [
+            "South Bay Mutual Aid",
+            "https://docs.google.com/forms/d/13DoFUR2WMEWy810nripBAEAI2mFec07nqbUGW85SKRA/viewform?edit_requested=true"
+          ],
+          [
+            "COVID19 Financial Solidarity",
+            "https://docs.google.com/spreadsheets/d/1FBEU0cdAGpScU0JrOlYFm8FrY1Bjr0_HsyW4hWOj74I/edit?fbclid=IwAR0JEMslDlce8kSJ3nqJI6N05fxa93Wc8lY0JCYT9Et2xrXIdtjLGBLuOGM#gid=0"
+          ]
+        ],
+
+        CT: [
+          [
+            "Mutual Aid Hartford, Waterbury, Bridgeport, New Haven",
+            "http://bit.ly/2Wg2pvc"
+          ]
+        ],
+
+        GA: [
+          ["Atlanta Survival Program Food4Life", "https://atlsurvival.org/"]
+        ],
+
+        IN: [
+          [
+            "Mutual Aid Brown County (IN) COVID-19",
+            "https://facebook.com/groups/BroCoMutualAid"
+          ]
+        ],
+
+        MA: [
+          [
+            "Mutual Aid Memford and Sumerville (MAMAS)",
+            "https://docs.google.com/document/d/1j8ADhLEuKNDZ1a_opmzudywJPKMXcNKu01V1xY2MiIA/preview"
+          ]
+        ],
+        MD: [
+          [
+            "Food & shelter mutual aid for UMBC students/staff",
+            "https://twitter.com/AMReese07/status/1237410913491116032"
+          ]
+        ],
+        NY: [
+          [
+            "Kensington, Brooklyn, Group for Mutual Aid (Coronavirus)",
+            "https://www.facebook.com/groups/884513918671186/"
+          ]
+        ],
+        TX: [
+          [
+            "Care Web Austin",
+            "https://docs.google.com/spreadsheets/d/1Eafuk2C9FZu5aW_gpPcDJPkbMCL6KA7UuBz2xfNAjug/edit#gid=1806223564"
+          ]
+        ],
+
+        WA: [
+          [
+            "GLP SANI - Green Light Project Sex-Worker Aid Network Initiative",
+            "https://www.gofundme.com/f/hzudk7?utm_source=customer&utm_medium=copy_link&utm_campaign=p_cf+share-flow-1"
+          ],
+          [
+            "From The Heart PNW Basic Needs Program",
+            "https://twitter.com/fromtheheartpnw"
+          ]
+        ]
       };
 
       var localesContainer = document.getElementById("localesContainer");
-
-      // for state in states (e.g. AL)
-      // for (localeIdx in resourcesLocale) {
-      //   var div = document.createElement("button");
-      //   div.textContent = resourcesLocale[localeIdx];
-      //   div.id = resourcesLocale[localeIdx];
-      //   localesContainer.appendChild(div);
-
-      //   var ul = document.createElement("ul");
-      //   ul.id = resourcesLocale[localeIdx] + "Resources";
-      //   ul.style.display = "none";
 
       resourcesLocale.map(function(locale) {
         var div = document.createElement("button");
@@ -84,18 +156,15 @@
         var ul = document.createElement("ul");
         ul.id = locale + "Resources";
         ul.style.display = "none";
-
-        console.log("LOCALE", locale);
         resourcesLinks[locale].map(function(linkArr) {
           let li = document.createElement("li");
-          console.log("LINK", linkArr);
 
           let a = document.createElement("a");
           a.textContent = linkArr[0];
           a.href = linkArr[1];
-          console.log("A AFTER HREF", a);
+          a.target = "_blank";
+          a.rel = "noopener noreferrer";
           li.append(a);
-          console.log("LI AFTER APPEND A", li);
           ul.append(li);
         });
         div.append(ul);

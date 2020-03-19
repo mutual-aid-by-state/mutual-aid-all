@@ -16,11 +16,15 @@ h2 {
 
 button {
   height: 200px;
-  max-height: 400px;
+  /* max-height: 400px; */
+  /* min-width: 15%; */
   width: 40%;
-  margin: 20px 0;
+  /* max-width: 25%; */
+  margin: 20px 20px;
+  overflow-y: scroll;
   background-color: red;
   font-size: 48px;
+  font-weight: bold;
   border-radius: 30px;
   border-color: black;
 }
@@ -34,10 +38,21 @@ button:hover {
 #localesContainer {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 ul {
-  font-size: 24px;
+  font-size: 20px;
+}
+
+li {
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+#feedback {
+  font-size: 20px;
 }
 
 @media screen and (max-width: 500px) {
