@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MUTUAL AID BY STATE</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1 id="projects-title">MUTUAL AID BY STATE</h1>
+      <h2>
+        Mutual Aid resources organized by U.S. state, in hopes to be more
+        accessible, increase ease of involvement, mitigate duplicate effort in
+        states with existing projects, and survive social media platform
+        censorship.
+      </h2>
+    </div>
+    <div id="localesContainer"></div>
+
+    <!-- TODO make email clickable to copy to clipboard -->
+    <div id="feedback">
+      <p>
+        Email mabscov19@gmail.com to add a Mutual Aid Resource, or to report an
+        a11y issue.
+      </p>
+      <p>
+        Please note this is the first iteration of a WIP, maintained by a single
+        dev in their spare time. It is desiged to be accessible and secure
+        first, with as little external dependencies as possible.
+      </p>
+      <p>
+        This is a free, open source project. Email mabscov19@gmail.com if you
+        would like to contribute design or development.
+      </p>
+    </div>
+
+    <script>
+      var fa = function toggleProject(e) {
+        localeBtn = document.getElementById(e.target.id);
+        localeUl = document.getElementById(e.target.id + "Resources");
+        localeUl.style.display =
+          localeUl.style.display === "none" ? "block" : "none";
+        localeBtn.style.backgroundColor =
+          localeBtn.style.backgroundColor === "ivory" ? "red" : "ivory";
+      };
+      var foo = function addToggleEventListener(id) {
+        console.log("ARE YOU BEING CALLED");
+
+        console.log(
+          "WHAT IS THE ELEMENT IN TOGGLE ADD",
+          document.getElementById(id)
+        );
+        theElement = document.getElementById(id);
+        theElement.addEventListener("click", fa);
+      };
+      // TODO abstract into json
+
+      var resourcesLocale = ["AL", "AZ"];
+
+      var resourcesLinks = {
+        AZ: [["Google", "https://www.google.com"]],
+        AL: [["facebook", "https://www.facebook.com"]]
+      };
+
+      var localesContainer = document.getElementById("localesContainer");
+
+      // for state in states (e.g. AL)
+      // for (localeIdx in resourcesLocale) {
+      //   var div = document.createElement("button");
+      //   div.textContent = resourcesLocale[localeIdx];
+      //   div.id = resourcesLocale[localeIdx];
+      //   localesContainer.appendChild(div);
+
+      //   var ul = document.createElement("ul");
+      //   ul.id = resourcesLocale[localeIdx] + "Resources";
+      //   ul.style.display = "none";
+
+      resourcesLocale.map(function(locale) {
+        var div = document.createElement("button");
+        div.textContent = locale;
+        div.id = locale;
+        localesContainer.appendChild(div);
+
+        var ul = document.createElement("ul");
+        ul.id = locale + "Resources";
+        ul.style.display = "none";
+
+        console.log("LOCALE", locale);
+        resourcesLinks[locale].map(function(linkArr) {
+          let li = document.createElement("li");
+          console.log("LINK", linkArr);
+
+          let a = document.createElement("a");
+          a.textContent = linkArr[0];
+          a.href = linkArr[1];
+          console.log("A AFTER HREF", a);
+          li.append(a);
+          console.log("LI AFTER APPEND A", li);
+          ul.append(li);
+        });
+        div.append(ul);
+        foo(locale);
+      });
+    </script>
+  </body>
+</html>
