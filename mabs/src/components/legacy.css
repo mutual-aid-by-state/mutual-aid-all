@@ -1,0 +1,88 @@
+html {
+  color: white;
+  background-color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 24px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+}
+
+button {
+  height: 200px;
+  /* max-height: 400px; */
+  /* min-width: 15%; */
+  width: 40%;
+  /* max-width: 25%; */
+  margin: 20px 20px;
+  overflow-y: scroll;
+  background-color: red;
+  font-size: 48px;
+  font-weight: bold;
+  border-radius: 30px;
+  border-color: black;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: ivory !important;
+  /* background-color: #9400d3; */
+}
+
+#localesContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+ul {
+  font-size: 24px;
+}
+
+li {
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+#feedback {
+  font-size: 20px;
+  margin: 20px;
+}
+
+#thanks {
+  font-size: 16px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Mobile styles */
+  html {
+    font-size: 24px;
+  }
+  h1 {
+    font-size: 3em !important;
+  }
+  #localesContainer {
+    flex-direction: column;
+  }
+
+  button {
+    width: 80%;
+  }
+
+  ul {
+    font-size: 34px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 999px) {
+  /* Tablet styles */
+}
+@media screen and (min-width: 1000px) {
+  /* Desktop styles */
+}
