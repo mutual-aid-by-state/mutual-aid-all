@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/mutual-aid-all/static/css/main.1b478850.chunk.css",
-    "main.js": "/mutual-aid-all/static/js/main.1d2d0af8.chunk.js",
-    "main.js.map": "/mutual-aid-all/static/js/main.1d2d0af8.chunk.js.map",
-    "runtime-main.js": "/mutual-aid-all/static/js/runtime-main.fdcbf1a0.js",
-    "runtime-main.js.map": "/mutual-aid-all/static/js/runtime-main.fdcbf1a0.js.map",
-    "static/js/2.c21fb1d3.chunk.js": "/mutual-aid-all/static/js/2.c21fb1d3.chunk.js",
-    "static/js/2.c21fb1d3.chunk.js.map": "/mutual-aid-all/static/js/2.c21fb1d3.chunk.js.map",
-    "index.html": "/mutual-aid-all/index.html",
-    "precache-manifest.6cb9347263cb4b23239c1e498ca9415d.js": "/mutual-aid-all/precache-manifest.6cb9347263cb4b23239c1e498ca9415d.js",
-    "service-worker.js": "/mutual-aid-all/service-worker.js",
-    "static/css/main.1b478850.chunk.css.map": "/mutual-aid-all/static/css/main.1b478850.chunk.css.map",
-    "static/js/2.c21fb1d3.chunk.js.LICENSE.txt": "/mutual-aid-all/static/js/2.c21fb1d3.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/mutual-aid-all/static/media/partisan.db1fcae7.png"
+    "main.css": "/static/css/main.fa9de37c.chunk.css",
+    "main.js": "/static/js/main.3281f17b.chunk.js",
+    "main.js.map": "/static/js/main.3281f17b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ce957065.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ce957065.js.map",
+    "static/js/2.c21fb1d3.chunk.js": "/static/js/2.c21fb1d3.chunk.js",
+    "static/js/2.c21fb1d3.chunk.js.map": "/static/js/2.c21fb1d3.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.53588019662ff99486f47c9e5c605524.js": "/precache-manifest.53588019662ff99486f47c9e5c605524.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.fa9de37c.chunk.css.map": "/static/css/main.fa9de37c.chunk.css.map",
+    "static/js/2.c21fb1d3.chunk.js.LICENSE.txt": "/static/js/2.c21fb1d3.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/partisan.db1fcae7.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.fdcbf1a0.js",
+    "static/js/runtime-main.ce957065.js",
     "static/js/2.c21fb1d3.chunk.js",
-    "static/css/main.1b478850.chunk.css",
-    "static/js/main.1d2d0af8.chunk.js"
+    "static/css/main.fa9de37c.chunk.css",
+    "static/js/main.3281f17b.chunk.js"
   ]
 }
