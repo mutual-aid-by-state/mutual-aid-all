@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: "6vw",
     color: "#b19cd9",
     textShadow: "-12px 7px #000",
-    textShadow: "2px 2px 12px black",
+    // textShadow: "2px 2px 12px black",
   },
   overviewContainer: {
     height: "400px",
