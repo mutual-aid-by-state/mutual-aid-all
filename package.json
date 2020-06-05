@@ -20,7 +20,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "deploy": "yarn run build && echo 'mutualaidall.cab' > ./build/CNAME && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
