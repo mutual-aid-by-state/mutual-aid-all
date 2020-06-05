@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
 
     [theme.breakpoints.down("sm")]: {
-      fontSize: "22px",
+      fontSize: "20px",
       textAlign: "left",
     },
   },
