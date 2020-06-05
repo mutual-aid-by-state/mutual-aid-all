@@ -8,7 +8,7 @@ import partisanBanner from "../../assets/images/partisan.png";
 
 const useStyles = makeStyles((theme) => ({
   headerOneMain: {
-    fontFamily: "Londrina Solid, Helvetica",
+    fontFamily: "Londrina Solid",
     textAlign: "left",
     fontSize: "120px",
     paddingLeft: "6vw",
@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
   headerOverview: {
     margin: "0 8vw",
     fontSize: "38px",
-    fontFamily: "Quicksand, Helvetica",
+    fontFamily: "Quicksand",
     fontWeight: "900",
     textAlign: "center",
 
