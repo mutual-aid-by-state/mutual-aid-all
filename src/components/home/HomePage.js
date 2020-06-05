@@ -8,7 +8,7 @@ import partisanBanner from "../../assets/images/partisan.png";
 
 const useStyles = makeStyles((theme) => ({
   headerOneMain: {
-    fontFamily: "Londrina Solid",
+    fontFamily: "Londrina Solid, Helvetica",
     textAlign: "left",
     fontSize: "120px",
     paddingLeft: "6vw",
@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
   headerOverview: {
     margin: "0 8vw",
     fontSize: "38px",
-    fontFamily: "Quicksand",
+    fontFamily: "Quicksand, Helvetica",
     fontWeight: "900",
     textAlign: "center",
 
@@ -106,8 +106,9 @@ const HomePage = () => {
       </div>
       <div className={classes.overviewContainer}>
         <h2 className={classes.headerOverview} style={{ textAlign: "left" }}>
-          UNDER CONSTRUCTION
+          UNDER CONSTRUCTION, SELECT A STATE FOR MUTUAL AID RESOURCES:
         </h2>
+        <div>Arizona</div>
       </div>
     </div>
   );
