@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "0",
   },
   overviewContainer: {
-    height: "400px",
+    height: "40vh",
     color: "#000",
     backgroundColor: "#fff",
     // backgroundColor: "#141414",
@@ -87,7 +87,7 @@ const HomePage = () => {
       <Hidden only={["sm", "md", "lg", "xl"]}>
         <div
           style={{
-            height: "45vh",
+            height: "50vh",
             backgroundImage: `url(${handsLogo})`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "165px",
