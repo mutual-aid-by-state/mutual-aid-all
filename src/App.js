@@ -3,6 +3,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 // import Header from "./components/common/Header";
 import HomePage from "./components/home/HomePage";
+import BLMPage from "./components/BLMPage";
 // import AboutPage from "./components/about/AboutPage";
 // import Footer from "./components/common/Footer";
 import "./App.css";
@@ -13,6 +14,7 @@ function App() {
       {/* <Header /> */}
       <Switch>
         <Route exact path="/" component={HomePage} />
+        <Route exact path="/BLM" component={BLMPage} />
         {/* <Route path="/about" component={AboutPage} /> */}
         {/* <Route component={PageNotFound} /> */}
       </Switch>

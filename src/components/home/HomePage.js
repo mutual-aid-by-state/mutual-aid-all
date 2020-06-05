@@ -5,6 +5,7 @@ import Hidden from "@material-ui/core/Hidden";
 // import NewsCarousel from "./NewsCarousel";
 // import NewsDesktop from "./NewsDesktop";
 import partisanBanner from "../../assets/images/partisan.png";
+import handsLogo from "../../assets/images/handsblackbg.png";
 
 const useStyles = makeStyles((theme) => ({
   headerOneMain: {
@@ -14,12 +15,29 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: "6vw",
     color: "#b19cd9",
     // textShadow: "-12px 7px #000",
-    textShadow: "2px 2px 12px black",
+    textShadow: "2px 2px 3px black",
+    marginBottom: "0",
   },
   overviewContainer: {
     height: "400px",
-    color: "#fff",
-    backgroundColor: "#141414",
+    color: "#000",
+    backgroundColor: "#fff",
+    // backgroundColor: "#141414",
+    fontSize: "36px",
+    fontFamily: "",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    [theme.breakpoints.down("sm")]: {
+      textAlign: "left",
+      alignItems: "flex-start",
+    },
+  },
+  overviewContainer2: {
+    height: "",
+    // color: "#fff",
+    backgroundColor: "#fff",
     fontSize: "36px",
     fontFamily: "",
     display: "flex",
@@ -69,14 +87,16 @@ const HomePage = () => {
       <Hidden only={["sm", "md", "lg", "xl"]}>
         <div
           style={{
-            height: "50vh",
-            backgroundImage: `url(${partisanBanner})`,
+            height: "45vh",
+            backgroundImage: `url(${handsLogo})`,
             backgroundRepeat: "no-repeat",
-            backgroundPosition: "5% 10%",
+            backgroundSize: "165px",
+            backgroundPosition: "bottom right",
+            backgroundColor: "#000",
             color: "#fff",
             display: "flex",
             flexDirection: "column",
-            justifyContent: "space-around",
+            // justifyContent: "space-around",
           }}
         >
           <h1
@@ -89,6 +109,30 @@ const HomePage = () => {
           >
             MUTUAL AID BY STATE
           </h1>
+          <p
+            style={{
+              color: "springgreen",
+              fontSize: "12px",
+              paddingLeft: "10vw",
+              marginTop: "0",
+            }}
+          >
+            &hearts; email
+            <br />
+            <span style={{ fontWeight: "bold", fontSize: "14px" }}>
+              mabscov19@gmail.com
+            </span>
+            <br />
+            to submit resources
+          </p>
+          {/* <img src={handsLogo} alt="two hands embracing" /> */}
+          {/* <div>
+            {" "}
+            <img
+              src={handsLogo}
+              style={{ height: "60px", width: "60px", paddingLeft: "20px" }}
+            />
+          </div> */}
         </div>
       </Hidden>
       <div className={classes.overviewContainer}>
@@ -104,11 +148,72 @@ const HomePage = () => {
           </a>
         </p> */}
       </div>
-      <div className={classes.overviewContainer}>
+      <div className={classes.overviewContainer2}>
+        <a
+          href="#BLM"
+          style={{
+            fontFamily: "Londrina Solid",
+            backgroundColor: "springgreen",
+            color: "black",
+            fontSize: "46px",
+            textAlign: "center",
+          }}
+        >
+          &hearts; BLACK LIVES MATTER LIST HERE
+        </a>
+        <div
+          style={{
+            width: "90vw",
+            height: "20vh",
+            borderBottom: "1px solid black",
+          }}
+        ></div>
         <h2 className={classes.headerOverview} style={{ textAlign: "left" }}>
-          UNDER CONSTRUCTION, SELECT A STATE FOR MUTUAL AID RESOURCES:
+          *UNDER CONSTRUCTION* SELECT A STATE FOR MUTUAL AID RESOURCES:
         </h2>
-        <div>Arizona</div>
+        <div
+          className={classes.statesContainer}
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+          }}
+        >
+          <div
+            style={{
+              fontFamily: "Londrina Solid",
+              backgroundColor: "springgreen",
+              padding: "20px",
+              margin: "10px",
+              border: "1px solid #000",
+              textAlign: "center",
+            }}
+          >
+            ARIZONA
+          </div>
+          <div
+            style={{
+              fontFamily: "Londrina Solid",
+              padding: "20px",
+              margin: "10px",
+              border: "1px solid #000",
+              textAlign: "center",
+            }}
+          >
+            CALIFORNIA
+          </div>
+          <div
+            style={{
+              fontFamily: "Londrina Solid",
+              padding: "20px",
+              margin: "10px",
+              border: "1px solid #000",
+              textAlign: "center",
+            }}
+          >
+            OREGON
+          </div>
+        </div>
       </div>
     </div>
   );
