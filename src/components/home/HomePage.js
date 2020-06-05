@@ -161,7 +161,7 @@ const HomePage = () => {
             textAlign: "center",
           }}
         >
-          &hearts; BLACK LIVES MATTER LIST HERE
+          &#10084; BLACK LIVES MATTER LIST HERE
         </a>
         <div
           style={{
