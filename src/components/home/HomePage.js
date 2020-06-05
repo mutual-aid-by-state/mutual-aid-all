@@ -11,15 +11,18 @@ const useStyles = makeStyles((theme) => ({
   headerOneMain: {
     fontFamily: "Londrina Solid",
     textAlign: "left",
-    fontSize: "120px",
+    fontSize: "80px",
     paddingLeft: "6vw",
     color: "#b19cd9",
     // textShadow: "-12px 7px #000",
     textShadow: "2px 2px 3px black",
     marginBottom: "0",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "60px",
+    },
   },
   overviewContainer: {
-    height: "40vh",
+    height: "36vh",
     color: "#000",
     backgroundColor: "#fff",
     // backgroundColor: "#141414",
@@ -103,7 +106,6 @@ const HomePage = () => {
             id="fadeText"
             style={{
               textAlign: "left",
-              fontSize: "80px",
             }}
             className={classes.headerOneMain}
           >
