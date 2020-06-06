@@ -90,7 +90,7 @@ const HomePage = () => {
       <Hidden only={["sm", "md", "lg", "xl"]}>
         <div
           style={{
-            height: "50vh",
+            height: "48vh",
             backgroundImage: `url(${handsLogo})`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "165px",
@@ -138,7 +138,10 @@ const HomePage = () => {
         </div>
       </Hidden>
       <div className={classes.overviewContainer}>
-        <h2 className={classes.headerOverview} style={{ margin: "20px 0" }}>
+        <h2
+          className={classes.headerOverview}
+          style={{ margin: "20px 0 20px 20px" }}
+        >
           MUTUAL AID RESOURCES ORGANIZED BY U.S. STATE, IN HOPES TO BE MORE
           ACCESSIBLE, INCREASE EASE OF INVOLVEMENT, MITIGATE DUPLICATE EFFORT IN
           REGIONS WITH EXISTING PROJECTS, AND SURVIVE SOCIAL MEDIA PLATFORM
