@@ -36,9 +36,12 @@ const BLMPage = (props) => {
     <div className={classes.root}>
       <div className={classes.header}>BLM COMPILATION OF RESOURCES</div>
       <FAQS />
-      <p style={{ fontFamily: "Quicksand", padding: "0 6vw" }}>
-        Huge thank you and all credit to black, BIPOC and POC activists for
-        crowdsourcing and consolidating these resources &hearts;
+      <p
+        style={{ fontFamily: "Quicksand", padding: "0 6vw", fontSize: "12px" }}
+      >
+        Huge thank you and all credit to @botanicaldyke and black, BIPOC and POC
+        activists for crowdsourcing, organizing and sharing these resources
+        &hearts;
       </p>
     </div>
   );
