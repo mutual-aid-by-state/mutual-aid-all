@@ -113,7 +113,7 @@ const HomePage = () => {
           </h1>
           <p
             style={{
-              color: "springgreen",
+              color: "white",
               fontSize: "12px",
               paddingLeft: "10vw",
               marginTop: "0",
@@ -161,7 +161,7 @@ const HomePage = () => {
             textAlign: "center",
           }}
         >
-          &#10084; BLACK LIVES MATTER LIST HERE
+          &#x2665; BLACK LIVES MATTER LIST HERE
         </a>
         <div
           style={{
