@@ -138,7 +138,7 @@ const HomePage = () => {
         </div>
       </Hidden>
       <div className={classes.overviewContainer}>
-        <h2 className={classes.headerOverview}>
+        <h2 className={classes.headerOverview} style={{ margin: "20px 0" }}>
           MUTUAL AID RESOURCES ORGANIZED BY U.S. STATE, IN HOPES TO BE MORE
           ACCESSIBLE, INCREASE EASE OF INVOLVEMENT, MITIGATE DUPLICATE EFFORT IN
           REGIONS WITH EXISTING PROJECTS, AND SURVIVE SOCIAL MEDIA PLATFORM
@@ -155,8 +155,8 @@ const HomePage = () => {
           href="#BLM"
           style={{
             fontFamily: "Londrina Solid",
-            backgroundColor: "springgreen",
-            color: "black",
+            backgroundColor: "black",
+            color: "#b19cd9",
             fontSize: "46px",
             textAlign: "center",
           }}
@@ -184,7 +184,7 @@ const HomePage = () => {
           <div
             style={{
               fontFamily: "Londrina Solid",
-              backgroundColor: "springgreen",
+              backgroundColor: "#b19cd9",
               padding: "20px",
               margin: "10px",
               border: "1px solid #000",
