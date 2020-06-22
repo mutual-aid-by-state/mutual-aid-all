@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
 
     [theme.breakpoints.down("sm")]: {
-      fontSize: "20px",
+      fontSize: "12px",
       textAlign: "left",
     },
   },
@@ -106,7 +106,7 @@ const HomePage = () => {
       <Hidden only={["sm", "md", "lg", "xl"]}>
         <div
           style={{
-            height: "36vh",
+            minHeight: "36vh",
             backgroundImage: `url(${heatmapBanner})`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "contain",
@@ -140,7 +140,7 @@ const HomePage = () => {
           <p
             style={{
               color: "white",
-              fontSize: "12px",
+              fontSize: "10px",
               paddingLeft: "10vw",
               marginTop: "12vh",
             }}
