@@ -6,6 +6,8 @@ import Hidden from "@material-ui/core/Hidden";
 // import NewsDesktop from "./NewsDesktop";
 import partisanBanner from "../../assets/images/partisan.png";
 import handsLogo from "../../assets/images/handsblackbg.png";
+import heatmapBanner from "../../assets/images/heatmap_banner.png";
+import heatmapHeader from "../../assets/images/header_heatmap.png";
 
 const useStyles = makeStyles((theme) => ({
   headerOneMain: {
@@ -104,33 +106,43 @@ const HomePage = () => {
       <Hidden only={["sm", "md", "lg", "xl"]}>
         <div
           style={{
-            height: "48vh",
-            backgroundImage: `url(${handsLogo})`,
+            height: "36vh",
+            backgroundImage: `url(${heatmapBanner})`,
             backgroundRepeat: "no-repeat",
-            backgroundSize: "165px",
-            backgroundPosition: "bottom right",
-            backgroundColor: "#000",
+            backgroundSize: "contain",
             color: "#fff",
             display: "flex",
             flexDirection: "column",
             // justifyContent: "space-around",
           }}
         >
-          <h1
-            id="fadeText"
-            style={{
-              textAlign: "left",
-            }}
-            className={classes.headerOneMain}
-          >
-            MUTUAL AID BY STATE
-          </h1>
+          {/* <img src={handsLogo} alt="two hands embracing" /> */}
+          {/* <div>
+            {" "}
+            <img
+              src={handsLogo}
+              style={{ height: "60px", width: "60px", paddingLeft: "20px" }}
+            />
+          </div> */}
+        </div>
+        <div
+          style={{
+            height: "31vh",
+            backgroundImage: `url(${heatmapHeader})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            color: "#fff",
+            display: "flex",
+            flexDirection: "column",
+            // justifyContent: "space-around",
+          }}
+        >
           <p
             style={{
               color: "white",
               fontSize: "12px",
               paddingLeft: "10vw",
-              marginTop: "0",
+              marginTop: "12vh",
             }}
           >
             &hearts; email
@@ -141,14 +153,6 @@ const HomePage = () => {
             <br />
             to submit resources
           </p>
-          {/* <img src={handsLogo} alt="two hands embracing" /> */}
-          {/* <div>
-            {" "}
-            <img
-              src={handsLogo}
-              style={{ height: "60px", width: "60px", paddingLeft: "20px" }}
-            />
-          </div> */}
         </div>
       </Hidden>
       <div className={classes.overviewContainer}>
@@ -156,10 +160,10 @@ const HomePage = () => {
           className={classes.headerOverview}
           style={{ margin: "20px 0 20px 20px" }}
         >
-          MUTUAL AID RESOURCES ORGANIZED BY U.S. STATE, IN HOPES TO BE MORE
-          ACCESSIBLE, INCREASE EASE OF INVOLVEMENT, MITIGATE DUPLICATE EFFORT IN
-          REGIONS WITH EXISTING PROJECTS, AND SURVIVE SOCIAL MEDIA PLATFORM
-          CENSORSHIP
+          Mutual Aid resources organized by U.S. State, in hopes to be more
+          accessible, increase ease of involvement, mitigate duplicate effort in
+          regions with existing projects, and survive social media platform
+          censorship.
         </h2>
         {/* <p className={classes.linkAboutContainer}>
           <a href="/about" className={classes.linkAboutOverview}>
