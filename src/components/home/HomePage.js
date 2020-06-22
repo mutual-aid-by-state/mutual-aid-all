@@ -109,7 +109,7 @@ const HomePage = () => {
             minHeight: "36vh",
             backgroundImage: `url(${heatmapBanner})`,
             backgroundRepeat: "no-repeat",
-            backgroundSize: "contain",
+            backgroundSize: "cover",
             color: "#fff",
             display: "flex",
             flexDirection: "column",
