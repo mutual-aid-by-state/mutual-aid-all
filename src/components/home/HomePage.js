@@ -9,11 +9,12 @@ import handsLogo from "../../assets/images/handsblackbg.png";
 
 const useStyles = makeStyles((theme) => ({
   headerOneMain: {
-    fontFamily: "Londrina Solid",
+    fontFamily: "Anonymous Pro",
     textAlign: "left",
-    fontSize: "80px",
+    fontSize: "46px",
+    width: "30%",
     paddingLeft: "6vw",
-    color: "#b19cd9",
+    color: "#fff",
     // textShadow: "-12px 7px #000",
     textShadow: "2px 2px 3px black",
     marginBottom: "0",
@@ -38,9 +39,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   overviewContainer2: {
-    height: "",
-    // color: "#fff",
-    backgroundColor: "#fff",
+    backgroundColor: "#000",
+    color: "#fff",
     fontSize: "36px",
     fontFamily: "",
     display: "flex",
@@ -53,15 +53,29 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   headerOverview: {
-    margin: "0 8vw",
+    margin: "4vh 8vw",
+    width: "60vw",
     fontSize: "38px",
-    fontFamily: "Quicksand",
+    fontFamily: "Anonymous Pro",
     fontWeight: "900",
     textAlign: "center",
 
     [theme.breakpoints.down("sm")]: {
       fontSize: "20px",
       textAlign: "left",
+    },
+  },
+  regionBtn: {
+    fontFamily: "Manrope",
+    backgroundColor: "#248470",
+    padding: "20px",
+    margin: "10px",
+    border: "1px solid #000",
+    textAlign: "center",
+    "&:hover": {
+      cursor: "pointer",
+      backgroundColor: "#fff",
+      color: "#000",
     },
   },
 }));
@@ -82,7 +96,7 @@ const HomePage = () => {
           }}
         >
           <h1 id="fadeText" className={classes.headerOneMain}>
-            MUTUAL AID BY STATE
+            email mabscov19@gmail.com to submit resources
           </h1>
         </div>
       </Hidden>
@@ -154,27 +168,25 @@ const HomePage = () => {
         </p> */}
       </div>
       <div className={classes.overviewContainer2}>
-        <a
+        {/* <a
           href="#BLM"
           style={{
-            fontFamily: "Londrina Solid",
-            backgroundColor: "black",
-            color: "#b19cd9",
-            fontSize: "46px",
+            fontFamily: "Manrope",
+            backgroundColor: "#0038C3",
+            color: "#fff",
             textAlign: "center",
+            fontSize: "24px",
+            paddingTop: "24px",
+            textAlign: "center",
+            width: "520px",
+            height: "82px",
           }}
         >
           &#x2665; BLACK LIVES MATTER LIST HERE
-        </a>
-        <div
-          style={{
-            width: "90vw",
-            height: "20vh",
-            borderBottom: "1px solid black",
-          }}
-        ></div>
+        </a> */}
+
         <h2 className={classes.headerOverview} style={{ textAlign: "left" }}>
-          *UNDER CONSTRUCTION* SELECT A STATE FOR MUTUAL AID RESOURCES:
+          SELECT A STATE FOR MUTUAL AID RESOURCES:
         </h2>
         <div
           className={classes.statesContainer}
@@ -184,40 +196,9 @@ const HomePage = () => {
             justifyContent: "center",
           }}
         >
-          <div
-            style={{
-              fontFamily: "Londrina Solid",
-              backgroundColor: "#b19cd9",
-              padding: "20px",
-              margin: "10px",
-              border: "1px solid #000",
-              textAlign: "center",
-            }}
-          >
-            ARIZONA
-          </div>
-          <div
-            style={{
-              fontFamily: "Londrina Solid",
-              padding: "20px",
-              margin: "10px",
-              border: "1px solid #000",
-              textAlign: "center",
-            }}
-          >
-            CALIFORNIA
-          </div>
-          <div
-            style={{
-              fontFamily: "Londrina Solid",
-              padding: "20px",
-              margin: "10px",
-              border: "1px solid #000",
-              textAlign: "center",
-            }}
-          >
-            OREGON
-          </div>
+          <div className={classes.regionBtn}>ARIZONA</div>
+          <div className={classes.regionBtn}>CALIFORNIA</div>
+          <div className={classes.regionBtn}>OREGON</div>
         </div>
       </div>
     </div>

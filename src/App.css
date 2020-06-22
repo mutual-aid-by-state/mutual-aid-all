@@ -29,15 +29,15 @@
 }
 
 .parallax {
-  background-image: url("./assets/images/peoplestock.png");
-  min-height: 800px;
+  background-image: url("./assets/images/Header.jpg");
+  min-height: 600px;
   background-attachment: fixed;
-  background-position: center;
+  /* background-position: center; */
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
 }
 
 @keyframes App-logo-spin {
