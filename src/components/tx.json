@@ -24,15 +24,11 @@
 
   {
     "key": "resourcesSection2",
-    "header": "SOUTH BAY",
+    "header": "AUSTIN",
     "resources": [
       {
-        "summary": "South Bay Mutual Aid",
-        "link": "https://docs.google.com/forms/d/13DoFUR2WMEWy810nripBAEAI2mFec07nqbUGW85SKRA/viewform?edit_requested=true"
-      },
-      {
-        "summary": "COVID19 Financial Solidarity",
-        "link": "https://docs.google.com/spreadsheets/d/1FBEU0cdAGpScU0JrOlYFm8FrY1Bjr0_HsyW4hWOj74I/edit?fbclid=IwAR0JEMslDlce8kSJ3nqJI6N05fxa93Wc8lY0JCYT9Et2xrXIdtjLGBLuOGM#gid=0"
+        "summary": "Care Web Austin",
+        "link": "https://docs.google.com/spreadsheets/d/1Eafuk2C9FZu5aW_gpPcDJPkbMCL6KA7UuBz2xfNAjug/edit#gid=1806223564"
       }
     ]
   }

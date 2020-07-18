@@ -13,7 +13,7 @@ import California from "./components/CA";
 // import Maryland from "./components/MD";
 // import Montana from "./components/MT";
 // import NewYork from "./components/NY";
-// import Texas from "./components/TX";
+import Texas from "./components/TX";
 // import Washington from "./components/WA";
 // import Wisconsin from "./components/WI";
 
@@ -30,16 +30,16 @@ function App() {
         {/* <Route exact path="/BLM" component={BLMPage} /> */}
         <Route exact path="/AZ" component={Arizona} />
         <Route exact path="/CA" component={California} />
-        {/* <Route exact path="/CT" component={Connecticut} />
-        <Route exact path="/GA" component={Georgia} />
-        <Route exact path="/IN" component={Indiana} />
-        <Route exact path="/MA" component={Massachusetts} />
-        <Route exact path="/MD" component={Maryland} />
-        <Route exact path="/MT" component={Montana} />
-        <Route exact path="/NY" component={NewYork} />
+        {/* <Route exact path="/CT" component={Connecticut} /> */}
+        {/* <Route exact path="/GA" component={Georgia} /> */}
+        {/* <Route exact path="/IN" component={Indiana} /> */}
+        {/* <Route exact path="/MA" component={Massachusetts} /> */}
+        {/* <Route exact path="/MD" component={Maryland} /> */}
+        {/* <Route exact path="/MT" component={Montana} /> */}
+        {/* <Route exact path="/NY" component={NewYork} /> */}
         <Route exact path="/TX" component={Texas} />
-        <Route exact path="/WA" component={Washington} />
-        <Route exact path="/WI" component={Wisconsin} /> */}
+        {/* <Route exact path="/WA" component={Washington} /> */}
+        {/* <Route exact path="/WI" component={Wisconsin} /> */}
 
         {/* <Route path="/about" component={AboutPage} /> */}
         {/* <Route component={PageNotFound} /> */}

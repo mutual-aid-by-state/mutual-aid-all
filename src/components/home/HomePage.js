@@ -220,7 +220,7 @@ const HomePage = () => {
           >
             CALIFORNIA
           </a>
-          <a
+          {/* <a
             href="#CT"
             className={classes.regionBtn}
             alt="Link to Connecticut Resources"
@@ -268,7 +268,7 @@ const HomePage = () => {
             alt="Link to New York Resources"
           >
             NEW YORK
-          </a>
+          </a> */}
           <a
             href="#TX"
             className={classes.regionBtn}
@@ -276,7 +276,7 @@ const HomePage = () => {
           >
             TEXAS
           </a>
-          <a
+          {/* <a
             href="#WA"
             className={classes.regionBtn}
             alt="Link to Washington Resources"
@@ -289,7 +289,7 @@ const HomePage = () => {
             alt="Link to Wisconsin Resources"
           >
             WISCONSIN
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
