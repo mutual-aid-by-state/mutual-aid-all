@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Hidden from "@material-ui/core/Hidden";
-import FAQS from "./FAQS";
+// import FAQS from "./AZ";
 
 // import placeholderBanner from "../../assets/images/banner_placeholder.jpg";
 
@@ -35,7 +35,7 @@ const BLMPage = (props) => {
   return (
     <div className={classes.root}>
       <div className={classes.header}>BLM COMPILATION OF RESOURCES</div>
-      <FAQS />
+      {/* <FAQS /> */}
       <p
         style={{ fontFamily: "Quicksand", padding: "0 6vw", fontSize: "12px" }}
       >

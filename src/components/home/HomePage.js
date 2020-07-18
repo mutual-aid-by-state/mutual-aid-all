@@ -10,6 +10,9 @@ import heatmapBanner from "../../assets/images/heatmap_banner.png";
 import heatmapHeader from "../../assets/images/header_heatmap.png";
 
 const useStyles = makeStyles((theme) => ({
+  root: {
+    backgroundColor: "#fff",
+  },
   headerOneMain: {
     fontFamily: "Anonymous Pro",
     textAlign: "left",
@@ -93,7 +96,7 @@ const useStyles = makeStyles((theme) => ({
 const HomePage = () => {
   const classes = useStyles();
   return (
-    <div>
+    <div className={classes.root}>
       <Hidden only={["xs"]}>
         <div
           className="parallax"
@@ -208,16 +211,90 @@ const HomePage = () => {
             width: "80%",
           }}
         >
-          <div className={classes.regionBtn}>ARIZONA</div>
           <a
-            href="#FAQS"
+            href="#AZ"
             className={classes.regionBtn}
             alt="Link to Arizona Resources"
           >
-            ARIZONA HERE
+            ARIZONA
           </a>
-          <div className={classes.regionBtn}>CALIFORNIA</div>
-          <div className={classes.regionBtn}>OREGON</div>
+          <a
+            href="#CA"
+            className={classes.regionBtn}
+            alt="Link to California Resources"
+          >
+            CALIFORNIA
+          </a>
+          <a
+            href="#CT"
+            className={classes.regionBtn}
+            alt="Link to Connecticut Resources"
+          >
+            CONNECTICUT
+          </a>
+          <a
+            href="#GA"
+            className={classes.regionBtn}
+            alt="Link to Georgia Resources"
+          >
+            GEORGIA
+          </a>
+          <a
+            href="#IN"
+            className={classes.regionBtn}
+            alt="Link to Indiana Resources"
+          >
+            INDIANA
+          </a>
+          <a
+            href="#MA"
+            className={classes.regionBtn}
+            alt="Link to Massachusetts Resources"
+          >
+            MASSACHUSETTS
+          </a>
+          <a
+            href="#MD"
+            className={classes.regionBtn}
+            alt="Link to Maryland Resources"
+          >
+            MARYLAND
+          </a>
+          <a
+            href="#MT"
+            className={classes.regionBtn}
+            alt="Link to Montana Resources"
+          >
+            MONTANA
+          </a>
+          <a
+            href="#NY"
+            className={classes.regionBtn}
+            alt="Link to New York Resources"
+          >
+            NEW YORK
+          </a>
+          <a
+            href="#TX"
+            className={classes.regionBtn}
+            alt="Link to Texas Resources"
+          >
+            TEXAS
+          </a>
+          <a
+            href="#WA"
+            className={classes.regionBtn}
+            alt="Link to Washington Resources"
+          >
+            WASHINGTON
+          </a>
+          <a
+            href="#WI"
+            className={classes.regionBtn}
+            alt="Link to Wisconsin Resources"
+          >
+            WISCONSIN
+          </a>
         </div>
       </div>
     </div>

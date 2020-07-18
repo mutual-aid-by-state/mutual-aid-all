@@ -7,28 +7,53 @@ import Typography from "@material-ui/core/Typography";
 // TODO expansion icon/s
 // import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
-let faqsJSON = require("./faqs.json");
+let faqsJSON = require("./az.json");
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: "80%",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
     // background: "#171717",
     fontSize: "28px",
+    color: "#fff",
+  },
+  regionHeader: {
+    fontFamily: "Anonymous Pro",
+    marginTop: "40px",
+    textAlign: "center",
+    fontSize: "32px",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "26px",
+    },
+  },
+  regionPanels: {
+    width: "80vw",
   },
   faqPanel: {
-    backgroundColor: "#171717",
-    color: "#fff",
-    border: "1px solid #fff",
+    backgroundColor: "#fff",
+    color: "#000",
+    borderRadius: "0px !important",
+    margin: "20px 0px",
   },
   heading: {
     fontSize: theme.typography.pxToRem(25),
     flexBasis: "80%",
-    fontFamily: "Londrina Solid",
+    fontFamily: "Manrope",
     flexShrink: 0,
   },
   summary: {
-    fontFamily: "Lato",
+    fontFamily: "Manrope",
+    // color: "#FF704E",
     fontSize: theme.typography.pxToRem(18),
+    display: "flex",
+    [theme.breakpoints.down("sm")]: {
+      flexDirection: "column",
+    },
+  },
+  summaryTitle: {
+    margin: "0 40px 0 0",
+    color: "#000",
   },
 }));
 
@@ -56,15 +81,24 @@ export default function ControlledExpansionPanels() {
       </ExpansionPanelSummary>
       <ExpansionPanelDetails>
         {/* TODO selectively bold text */}
-        <Typography className={classes.summary}>
-          {faqPanel.key === "faqsSection1" ||
-          ("faqsSection2" && faqPanel.boldText)
-            ? faqPanel.boldText + faqPanel.summary
-            : faqPanel.summary}
+        <Typography className={classes.summary} style={{ display: "flex" }}>
+          <p className={classes.summaryTitle}>{faqPanel.summary}</p>
+          <a
+            href={faqPanel.link}
+            style={{ textDecoration: "none", color: "#FF704E" }}
+            alt="Link to resource"
+          >
+            Learn more
+          </a>
         </Typography>
       </ExpansionPanelDetails>
     </ExpansionPanel>
   ));
 
-  return <div className={classes.root}>{faqPanels}</div>;
+  return (
+    <div className={classes.root}>
+      <h1 className={classes.regionHeader}>Arizona Resources</h1>
+      <div className={classes.regionPanels}>{faqPanels}</div>
+    </div>
+  );
 }
