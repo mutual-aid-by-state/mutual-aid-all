@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   overviewContainer: {
-    height: "36vh",
+    height: "40vh",
     color: "#000",
     backgroundColor: "#fff",
     // backgroundColor: "#141414",
@@ -41,6 +41,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   overviewContainer2: {
+    minHeight: "40vh",
     backgroundColor: "#000",
     color: "#fff",
     fontSize: "36px",
@@ -55,9 +56,10 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   headerOverview: {
-    margin: "4vh 8vw",
-    width: "60vw",
+    // margin: "4vh 8vw",
+    width: "52vw",
     fontSize: "38px",
+    lineHeight: "1.2",
     fontFamily: "Anonymous Pro",
     fontWeight: "900",
     textAlign: "center",
@@ -69,8 +71,13 @@ const useStyles = makeStyles((theme) => ({
   },
   regionBtn: {
     fontFamily: "Manrope",
+    textDecoration: "none",
+    height: "52px",
+    width: "320px",
+    paddingTop: "6px",
+    fontSize: "30px",
+    color: "#fff",
     backgroundColor: "#248470",
-    padding: "20px",
     margin: "10px",
     border: "1px solid #000",
     textAlign: "center",
@@ -158,7 +165,7 @@ const HomePage = () => {
       <div className={classes.overviewContainer}>
         <h2
           className={classes.headerOverview}
-          style={{ margin: "20px 0 20px 20px" }}
+          // style={{ margin: "20px 0 20px 20px" }}
         >
           Mutual Aid resources organized by U.S. State, in hopes to be more
           accessible, increase ease of involvement, mitigate duplicate effort in
@@ -189,8 +196,8 @@ const HomePage = () => {
           &#x2665; BLACK LIVES MATTER LIST HERE
         </a> */}
 
-        <h2 className={classes.headerOverview} style={{ textAlign: "left" }}>
-          SELECT A STATE FOR MUTUAL AID RESOURCES:
+        <h2 className={classes.headerOverview} style={{ width: "60vw" }}>
+          Select a state for mutual aid resources:
         </h2>
         <div
           className={classes.statesContainer}
@@ -198,9 +205,17 @@ const HomePage = () => {
             display: "flex",
             flexWrap: "wrap",
             justifyContent: "center",
+            width: "80%",
           }}
         >
           <div className={classes.regionBtn}>ARIZONA</div>
+          <a
+            href="#FAQS"
+            className={classes.regionBtn}
+            alt="Link to Arizona Resources"
+          >
+            ARIZONA HERE
+          </a>
           <div className={classes.regionBtn}>CALIFORNIA</div>
           <div className={classes.regionBtn}>OREGON</div>
         </div>
