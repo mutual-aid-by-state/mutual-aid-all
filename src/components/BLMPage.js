@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import Hidden from "@material-ui/core/Hidden";
+// import Hidden from "@material-ui/core/Hidden";
 // import FAQS from "./AZ";
 
 // import placeholderBanner from "../../assets/images/banner_placeholder.jpg";

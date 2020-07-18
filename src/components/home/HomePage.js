@@ -4,8 +4,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import Hidden from "@material-ui/core/Hidden";
 // import NewsCarousel from "./NewsCarousel";
 // import NewsDesktop from "./NewsDesktop";
-import partisanBanner from "../../assets/images/partisan.png";
-import handsLogo from "../../assets/images/handsblackbg.png";
 import heatmapBanner from "../../assets/images/heatmap_banner.png";
 import heatmapHeader from "../../assets/images/header_heatmap.png";
 
@@ -91,6 +89,7 @@ const useStyles = makeStyles((theme) => ({
 // TODO abstract out inline styling for sections
 const HomePage = () => {
   const classes = useStyles();
+
   return (
     <div className={classes.root}>
       <Hidden only={["xs"]}>

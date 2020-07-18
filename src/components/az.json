@@ -14,5 +14,11 @@
     "key": "resourcesSection3",
     "header": "PROTESTING",
     "summary": "www.google.com"
+  },
+  {
+    "key": "resourcesSection4",
+    "header": "PHOENIX",
+    "summary": "Mutual Aid Phoenix",
+    "link": "https://www.mutualaidphx.com"
   }
 ]

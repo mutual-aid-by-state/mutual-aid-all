@@ -3,7 +3,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 // import Header from "./components/common/Header";
 import HomePage from "./components/home/HomePage";
-import BLMPage from "./components/BLMPage";
+// import BLMPage from "./components/BLMPage";
 import Arizona from "./components/AZ";
 // import California from "./components/CA";
 // import Connecticut from "./components/CT";

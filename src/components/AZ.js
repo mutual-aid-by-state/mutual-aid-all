@@ -87,6 +87,8 @@ export default function ControlledExpansionPanels() {
             href={faqPanel.link}
             style={{ textDecoration: "none", color: "#FF704E" }}
             alt="Link to resource"
+            rel="noopener noreferrer"
+            target="_blank"
           >
             Learn more
           </a>
