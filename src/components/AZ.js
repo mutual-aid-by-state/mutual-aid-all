@@ -47,6 +47,7 @@ const useStyles = makeStyles((theme) => ({
     // color: "#FF704E",
     fontSize: theme.typography.pxToRem(18),
     display: "flex",
+    marginBottom: "40px",
     [theme.breakpoints.down("sm")]: {
       flexDirection: "column",
     },
@@ -79,20 +80,23 @@ export default function ControlledExpansionPanels() {
       >
         <Typography className={classes.heading}>{faqPanel.header}</Typography>
       </ExpansionPanelSummary>
-      <ExpansionPanelDetails>
-        {/* TODO selectively bold text */}
-        <Typography className={classes.summary} style={{ display: "flex" }}>
-          <p className={classes.summaryTitle}>{faqPanel.summary}</p>
-          <a
-            href={faqPanel.link}
-            style={{ textDecoration: "none", color: "#FF704E" }}
-            alt="Link to resource"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Learn more
-          </a>
-        </Typography>
+      <ExpansionPanelDetails
+        style={{ display: "flex", flexDirection: "column" }}
+      >
+        {faqPanel.resources.map((resource) => (
+          <Typography className={classes.summary} style={{ display: "flex" }}>
+            <p className={classes.summaryTitle}>{resource.summary}</p>
+            <a
+              href={resource.link}
+              style={{ textDecoration: "none", color: "#FF704E" }}
+              alt="Link to resource"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Learn more
+            </a>
+          </Typography>
+        ))}
       </ExpansionPanelDetails>
     </ExpansionPanel>
   ));

@@ -1,24 +1,35 @@
 [
   {
     "key": "resourcesSection1",
-    "header": "LEGAL AID",
-    "summary": "need resources",
-    "link": "www.google.com"
+    "header": "GENERAL",
+    "resources": [
+      {
+        "summary": "High Level Mutual Aid Info",
+        "link": "https://docs.google.com/document/d/1dpMzMzsA83jbVEXS8m7QKOtK4nj6gIUk1U1t6P4wShY/mobilebasic"
+      },
+      {
+        "summary": "WILLING TO HELP IMMUNE COMPROMISED PEOPLE IN NEED",
+        "link": "https://docs.google.com/document/d/1u6JQDlkjEWaYtfTxQ54gshOjOl9Fc76UCi5jVYYGn9E/"
+      },
+      {
+        "summary": "Collective Care Is Our Best Weapon against COVID-19",
+        "link": "https://docs.google.com/document/d/1uP49OQGhosfBN4BOYQvyy_Mu3mpCSOYzip13LksC-S8/edit"
+      },
+      {
+        "summary": "Mutual Aid Disaster Relief",
+        "link": "https://mutualaiddisasterrelief.org/"
+      }
+    ]
   },
+
   {
     "key": "resourcesSection2",
-    "header": "CROWDFUNDING",
-    "summary": "www.google.com"
-  },
-  {
-    "key": "resourcesSection3",
-    "header": "PROTESTING",
-    "summary": "www.google.com"
-  },
-  {
-    "key": "resourcesSection4",
     "header": "PHOENIX",
-    "summary": "Mutual Aid Phoenix",
-    "link": "https://www.mutualaidphx.com"
+    "resources": [
+      {
+        "summary": "Mutual Aid Phoenix",
+        "link": "https://www.mutualaidphx.com"
+      }
+    ]
   }
 ]
