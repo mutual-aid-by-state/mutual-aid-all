@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   overviewContainer: {
-    height: "40vh",
+    height: "unset",
     color: "#000",
     backgroundColor: "#fff",
     // backgroundColor: "#141414",
@@ -39,8 +39,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     [theme.breakpoints.down("sm")]: {
-      textAlign: "left",
-      alignItems: "flex-start",
+      height: "unset",
     },
   },
   overviewContainer2: {
@@ -53,10 +52,6 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    [theme.breakpoints.down("sm")]: {
-      textAlign: "left",
-      alignItems: "flex-start",
-    },
   },
   headerOverview: {
     // margin: "4vh 8vw",
@@ -68,8 +63,9 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
 
     [theme.breakpoints.down("sm")]: {
-      fontSize: "12px",
-      textAlign: "left",
+      fontSize: "24px",
+      textAlign: "center",
+      width: "80vw",
     },
   },
   regionBtn: {
