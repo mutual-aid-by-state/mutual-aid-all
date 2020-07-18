@@ -5,7 +5,7 @@ import { Route, Switch } from "react-router-dom";
 import HomePage from "./components/home/HomePage";
 // import BLMPage from "./components/BLMPage";
 import Arizona from "./components/AZ";
-// import California from "./components/CA";
+import California from "./components/CA";
 // import Connecticut from "./components/CT";
 // import Georgia from "./components/GA";
 // import Indiana from "./components/IN";
@@ -29,8 +29,8 @@ function App() {
         <Route exact path="/" component={HomePage} />
         {/* <Route exact path="/BLM" component={BLMPage} /> */}
         <Route exact path="/AZ" component={Arizona} />
-        {/* <Route exact path="/CA" component={California} />
-        <Route exact path="/CT" component={Connecticut} />
+        <Route exact path="/CA" component={California} />
+        {/* <Route exact path="/CT" component={Connecticut} />
         <Route exact path="/GA" component={Georgia} />
         <Route exact path="/IN" component={Indiana} />
         <Route exact path="/MA" component={Massachusetts} />

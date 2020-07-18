@@ -1,0 +1,35 @@
+[
+  {
+    "key": "resourcesSection1",
+    "header": "GENERAL",
+    "resources": [
+      {
+        "summary": "High Level Mutual Aid Info",
+        "link": "https://docs.google.com/document/d/1dpMzMzsA83jbVEXS8m7QKOtK4nj6gIUk1U1t6P4wShY/mobilebasic"
+      },
+      {
+        "summary": "WILLING TO HELP IMMUNE COMPROMISED PEOPLE IN NEED",
+        "link": "https://docs.google.com/document/d/1u6JQDlkjEWaYtfTxQ54gshOjOl9Fc76UCi5jVYYGn9E/"
+      },
+      {
+        "summary": "Collective Care Is Our Best Weapon against COVID-19",
+        "link": "https://docs.google.com/document/d/1uP49OQGhosfBN4BOYQvyy_Mu3mpCSOYzip13LksC-S8/edit"
+      },
+      {
+        "summary": "Mutual Aid Disaster Relief",
+        "link": "https://mutualaiddisasterrelief.org/"
+      }
+    ]
+  },
+
+  {
+    "key": "resourcesSection2",
+    "header": "SOUTH BAY",
+    "resources": [
+      {
+        "summary": "South Bay Mutual Aid",
+        "link": "https://docs.google.com/forms/d/13DoFUR2WMEWy810nripBAEAI2mFec07nqbUGW85SKRA/viewform?edit_requested=true"
+      }
+    ]
+  }
+]
